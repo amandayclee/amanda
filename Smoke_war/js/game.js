@@ -1096,7 +1096,7 @@ var PACMAN = (function () {
         var topLeft  = (map.height * map.blockSize),
             textBase = topLeft + 17;
         
-        ctx.fillStyle = "#000000";
+        ctx.fillStyle = "#000";
         ctx.fillRect(0, topLeft, (map.width * map.blockSize), 30);
         
         ctx.fillStyle = "#FFFF00";
@@ -1328,23 +1328,27 @@ var PACMAN = (function () {
  
 	    //apply new child "canvas".
 	    wrapper.appendChild(canvas);
-	    
+	     
 	    //指定2D繪圖
 	    ctx  = canvas.getContext('2d');
 
-		ctx.fillStyle = '#28283c';//填滿的顏色    
+		ctx.fillStyle = '#1a1a1a';//填滿的顏色    
 	    ctx.fillRect(0, 0, width / 2, height);
 
-	    ctx.fillStyle = '#f6e6d9';//填滿的顏色
+	    ctx.fillStyle = '#857e7e';//填滿的顏色
 		ctx.fillRect(width / 2 , 0,  width / 2, height);
 
 
-	    ctx.fillStyle= 'black';
-	    ctx.font="40px Georgia";
-		ctx.fillText("Smoker",25, height /2);
+	    ctx.fillStyle= '#c5c5c5';
+	    ctx.font="25px Georgia";
+		ctx.fillText("Smoker",45, height /2);
 
 		ctx.font="25px Georgia";
 		ctx.fillText("Non-smoker",190,height/2);
+
+        ctx.fillStyle='#c5c5c5';
+        ctx.font="16px Georgia";
+        ctx.fillText("Click to choose game mode.",65,height*4/5);
 
 		//mouse detection
 		canvas.addEventListener('click',function(e){
