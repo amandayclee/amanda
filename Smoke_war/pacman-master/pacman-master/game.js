@@ -946,7 +946,7 @@ Pacman.Control = function(map,status){
 
 Pacman.Score = function () {
 
-    var current_score = null,
+    var current_score = 0,
         lives         = null;
 
     function addScore(nScore) { 
