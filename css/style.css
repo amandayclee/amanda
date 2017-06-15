@@ -64,7 +64,20 @@ blockquote.bigquote {
 .text-bold {
 	font-weight: 900;
 }
+#ba h5, #ba h2{
+	background: rgba(0%,0%,0%,0.6);
+	box-shadow:0 0 9px 5px rgba(0,0,0,0.5);
+}
 
+#ba p{
+	background: rgba(100%,100%,100%,0.6);
+	box-shadow:0 0 4px 3px rgba(100%,100%,100%,0.6);
+}
+
+#bat p{
+	background: rgba(0%,0%,0%,0.6);
+	box-shadow:0 0 9px 5px rgba(0,0,0,0.5);
+}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 	display: block;
 }
